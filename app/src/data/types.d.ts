@@ -4,6 +4,7 @@ type Job = {
   description: string;
   salary?: number;
   startDate: string;
+  company: Company;
 };
 
 type Company = {
