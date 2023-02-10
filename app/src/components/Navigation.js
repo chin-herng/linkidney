@@ -1,11 +1,12 @@
 import React from "react";
+import { LinkContainer } from "react-router-bootstrap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 const Navigation = () => {
   return (
-    <Navbar expand="lg" class="navbar">
+    <Navbar expand="lg" className="navbar">
       <Container>
         <Navbar.Brand href="#home">
           <img
@@ -19,10 +20,18 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#individual">Individual</Nav.Link>
-            <Nav.Link href="#business">Business</Nav.Link>
-            <Nav.Link href="#help">Help</Nav.Link>
-            <Nav.Link href="#login">Login</Nav.Link>
+            <LinkContainer to="/individual">
+              <Nav.Link>Individual</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/business">
+              <Nav.Link>Business</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/help">
+              <Nav.Link>Help</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/login">
+              <Nav.Link>Login</Nav.Link>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Container>
