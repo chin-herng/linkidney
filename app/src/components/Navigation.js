@@ -36,7 +36,7 @@ const Navigation = () => {
             )}
 
             <LinkContainer to="/login">
-              <Nav.Link>Logout</Nav.Link>
+              <Nav.Link>Login</Nav.Link>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>
