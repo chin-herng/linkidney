@@ -7,6 +7,7 @@ import {
   Row,
   Col,
   FormLabel,
+  Select,
 } from "react-bootstrap";
 
 const IndividualView = ({ jobs }) => {
@@ -22,6 +23,42 @@ const IndividualView = ({ jobs }) => {
     // Submit the filtered results here, for example:
     // applyFilters({ company, jobType, area, salary });
   };
+  const jobTypes = [
+    "Accounting/Finance",
+    "Audit & Taxation",
+    " General/Cost Accounting",
+    "Corporate Finance/Investment",
+    " Banking/Financial",
+    " Admin/Human Resources",
+    " Clerical/Administrative Support",
+    "   Human Resources",
+    "Secretarial/Executive Personal Assistant",
+    " Sales/Marketing",
+    "Marketing",
+    "Sales",
+    "Merchandising",
+    "E-commerce",
+    "Digital Marketing",
+    "Arts/media/Communications",
+    "Advertising",
+    "Arts/Creative Design",
+    "Services",
+    "Customer Service",
+    "Logistics/Supply Chain",
+    "Tech & Helpdesk Support",
+    "Hotel/Restaurant",
+    "Food/Beverage/Restaurant",
+    " Hotel/Tourism",
+    "Education/Training",
+    "Education",
+    "Computer/Information Technology",
+    "IT-Hardware",
+    "IT-Software",
+    " Manufacturing",
+    " Maintenance",
+    "Quality Assurance",
+    "Others",
+  ];
 
   return (
     <>
@@ -37,11 +74,11 @@ const IndividualView = ({ jobs }) => {
           </Col>
           <Col xs={12} md={3}>
             <FormLabel>Job Type</FormLabel>
-            <FormControl
-              type="text"
-              value={jobType}
-              onChange={(event) => setJobType(event.target.value)}
-            />
+            <Form.Select aria-label="Default select example">
+              {jobTypes.map((jobType) => (
+                <option>{jobType}</option>
+              ))}
+            </Form.Select>
           </Col>
           <Col xs={12} md={3}>
             <FormLabel>Area</FormLabel>
@@ -56,7 +93,7 @@ const IndividualView = ({ jobs }) => {
           </Col>
         </Row>
       </Form>
-      <Row xs={4} md={2} className="g-4" style={{ margin: "0 auto" }}>
+      <Row xs={4} md={4} className="g-4" style={{ margin: "0 auto" }}>
         {jobs.map((job) => (
           <JobCard key={job.id} job={job} />
         ))}

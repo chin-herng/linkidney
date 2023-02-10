@@ -10,7 +10,6 @@ const App = () => {
     <BrowserRouter>
       <Navigation />
       <AppRoutes />
-      <Login />
     </BrowserRouter>
   );
 };
