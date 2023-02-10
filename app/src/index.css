@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 code {
@@ -20,4 +21,77 @@ code {
   color: white !important;
   padding-left: 7em !important;
   padding-right: 7em !important;
+}
+
+.splitScreen {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+}
+
+.impossible {
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.translate {
+  margin-top: 1em;
+  margin-right: 1em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+input[type="text"],
+input[type="password"] {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #8b0000;
+  border: 1px solid #8b0000;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+input[type="submit"]:hover {
+  background: #5b0000;
+  border: 1px solid #5b0000;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  padding: 2rem;
+  margin-top: 2em;
+}
+
+.title {
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+  height: 3em;
+}
+
+.forgot {
+  margin: auto;
+  text-align: center;
+  margin-top: 3em;
 }
