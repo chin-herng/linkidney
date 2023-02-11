@@ -63,15 +63,6 @@ The employees can choose from a list of companies that have offered the job in t
 
 The employee can peek through the detail bar of each company at their offered job position, expected salary provided and some simple additional requirements. The companies’ official contact number and location are also stated on the right upper corner of their detail bar. If the employees want to know more about a particular company, they can click on “learn more” and learn more details of the company such as job details, worktime, hired user from LinKidney and LinKidney user feedback (rated by previous employees seeked from LinKidney). Lastly, the employee can click “apply” to send a job application to the company. 
 
-### 3. Individual Page
-
-In this page, the employees can seek for financial support or career path guidance through different source.  
-
-### 4. Business Page
-
-In this page, the benefits for employers to hire kidney patients are stated, so that the employers are encouraged and motivated to hire kidney patients.  
-
-As an example, according to an article from MyCareersFuture, employers can receive an Senior Employment Credit (SEC) to offset up to 16% of the wages of employees who have disabilities, indicating a reduction on company expenses. Besides, employers can apply training grants when they enroll their employees in Workfare Training Schemes, which returns them with improved employees. Moreover, employers should not be worried about the performance of kidney patients as employers can apply for grants and employment services to train and integrate the patients under the Open Door Programme (ODP). 
 
 ## Roadmap
 
