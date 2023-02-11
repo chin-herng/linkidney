@@ -1,15 +1,15 @@
 import { BsTranslate } from "react-icons/bs";
 import { IconContext } from "react-icons";
-import { StyleSheet, TextInput } from 'react-native';
+import { StyleSheet, TextInput } from "react-native";
 
 const styles = StyleSheet.create({
-    textInput: {
-        textAlign: 'center',
-        flex: 1,
-        borderRadius: '10px',
-        color: '#AAAAAA',
-        fontSize: '20px',
-     }
+  textInput: {
+    textAlign: "center",
+    flex: 1,
+    borderRadius: "10px",
+    color: "#AAAAAA",
+    fontSize: "20px",
+  },
 });
 
 const Login = () => {
