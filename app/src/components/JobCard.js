@@ -9,10 +9,10 @@ const JobCard = ({ job }) => {
       <Card.Img variant="top" src={job.company.image} />
       <Card.Body>
         <Card.Title>
-          {job.title}{" "}
+          Company Name{" "}
           {job.salary && <Badge bg="info">{"$" + job.salary}</Badge>}
         </Card.Title>
-        <Card.Text>{job.description}</Card.Text>
+        <Card.Text>Company Description</Card.Text>
       </Card.Body>
       <Card.Footer style={{ position: "relative" }}>
         Posted on {job.postedOn}{" "}
@@ -21,7 +21,7 @@ const JobCard = ({ job }) => {
           size="sm"
           style={{ position: "absolute", right: "0" }}
         >
-          Apply
+          Learn More
         </Button>
       </Card.Footer>
     </Card>

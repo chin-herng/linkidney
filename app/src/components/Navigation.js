@@ -21,20 +21,15 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            {useLocation().pathname === "/login" && (
-              <>
-                <LinkContainer to="/individual">
-                  <Nav.Link>Individual</Nav.Link>
-                </LinkContainer>
-                <LinkContainer to="/business">
-                  <Nav.Link>Business</Nav.Link>
-                </LinkContainer>
-                <LinkContainer to="/help">
-                  <Nav.Link>Help</Nav.Link>
-                </LinkContainer>
-              </>
-            )}
-
+            <LinkContainer to="/individual">
+                <Nav.Link>Individual</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/business">
+              <Nav.Link>Business</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/help">
+              <Nav.Link>Help</Nav.Link>
+            </LinkContainer>
             <LinkContainer to="/login">
               <Nav.Link>Login</Nav.Link>
             </LinkContainer>

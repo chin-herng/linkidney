@@ -25,7 +25,7 @@ const Login = () => {
                 </div>
                 <div className="login-form">
                     <div className="title">Login Portal</div>
-                    <form action="https://www.google.com">
+                    <form action="/company">
                         <div className="input-container">
                             <TextInput
                                 style={styles.textInput}
